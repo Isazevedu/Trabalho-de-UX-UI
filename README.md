@@ -1,4 +1,3 @@
-[PLANO DE TESTE B.I.xlsx](https://github.com/user-attachments/files/17967617/PLANO.DE.TESTE.B.I.xlsx)
 
 # Trabalho-de-UX-UI
 # Projeto de Verificação de Login em Java
