@@ -1,22 +1,26 @@
+
 # Trabalho-de-UX-UI
 # Projeto de Verificação de Login em Java
 
-## Melhorias Sugeridas
-1. **Gerenciamento de Credenciais**:
-   - Usar um arquivo de configuração para armazenar a URL, o nome de usuário e a senha do banco de dados.
+## Erros Identificados no Código**
+1. **Importação do Driver JDBC:**:
+   - O driver "com.mysql.Driver.Manager" está incorreto. Deve ser "com.mysql.cj.jdbc.Driver".
 
-2. **Evitar SQL Injection**:
-   - Substituir a construção manual da query por `PreparedStatement` para evitar vulnerabilidades.
+2. **Exposição de Credenciais**:
+   - Credenciais do banco de dados estão diretamente no código, o que compromete a segurança.
 
-3. **Melhorias na Conexão**:
-   - Garantir o fechamento da conexão com o banco, mesmo em caso de erros.
-   - Utilizar um pool de conexões para melhorar a performance em sistemas maiores.
+3. **Vulnerabilidade a SQL Injection:**:
+   - O método verificarUsuario utiliza concatenação de strings para consultas SQL, expondo o sistema a ataques.
 
-4. **Substituir `printStackTrace` por Logger**:
-   - Poderia usar um logger ao invés de `printStackTrace` para melhor controle dos logs.
+4. **Conexão com Banco Não Fechada:**
+   -O código não garante o fechamento da conexão com o banco, podendo causar vazamento de recursos.
+   
+4. **Tratamento Inadequado de Exceções:**
+   -Exceções são tratadas apenas com printStackTrace, o que não é apropriado para produção.
+
 
 ## Grafo de Fluxo
-![Diagrama em branco](https://github.com/user-attachments/assets/b4373aa1-788c-4d66-81a4-85375c3a709f)
+![_Fluxograma](https://github.com/user-attachments/assets/564ef568-c114-4bf6-a3c2-0cc7cf70a68e)
 
 1. **cálculo da complexidade ciclomática e seus caminhos**
 
