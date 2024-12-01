@@ -47,11 +47,12 @@ Portanto, a **complexidade ciclomática é 4**, indicando que são necessários,
 
 ## Possíveis Caminhos Identificados no Grafo
 
-Os trajetos possíveis no grafo são descritos abaixo: 
-1º. **1 → 2 → 3 → 4 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 11 → 15 → 16 → 17**  
-2º. **1 → 2 → 3 → 4 → 3 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 11 → 15 → 16 → 17**  
-3º. **1 → 2 → 3 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 11 → 15 → 16 → 17**  
-4º. **1 → 2 → 3 → 4 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 15 → 16 → 17**
+Os trajetos possíveis no grafo são descritos abaixo:
+
+Caminho 1: **1 → 2 → 3 → 4 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 11 → 15 → 16 → 17**  
+Caminho 2: **1 → 2 → 3 → 4 → 3 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 11 → 15 → 16 → 17**  
+Caminho 3: **1 → 2 → 3 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 11 → 15 → 16 → 17**  
+Caminho 4: **1 → 2 → 3 → 4 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 15 → 16 → 17**
 
 ## TESTE ESTÁTICO
 
