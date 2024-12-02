@@ -9,7 +9,7 @@
 2. **Exposição de Credenciais**
    - Credenciais do banco de dados estão diretamente no código, o que compromete a segurança.
 
-3. **Vulnerabilidade a SQL Injection:**:
+3. **Vulnerabilidade a SQL Injection:**
    - O método verificarUsuario utiliza concatenação de strings para consultas SQL, expondo o sistema a ataques.
 
 4. **Conexão com Banco Não Fechada:**
