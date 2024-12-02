@@ -3,10 +3,10 @@
 # Projeto de Verificação de Login em Java
 
 ## Erros Identificados no Código**
-1. **Importação do Driver JDBC:**:
+1. **Importação do Driver JDBC:**
    - O driver "com.mysql.Driver.Manager" está incorreto. Deve ser "com.mysql.cj.jdbc.Driver".
 
-2. **Exposição de Credenciais**:
+2. **Exposição de Credenciais**
    - Credenciais do banco de dados estão diretamente no código, o que compromete a segurança.
 
 3. **Vulnerabilidade a SQL Injection:**:
